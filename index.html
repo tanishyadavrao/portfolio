@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+        scroll-behavior: smooth;
+      }
+      nav {
+        background-color: rgb(6, 16, 41);
+        display: flex;
+        height: 50px;
+        justify-content: space-around;
+        padding-top: 15px;
+        position: fixed;
+        width: 100vw;
+      }
+      .links ul {
+        display: flex;
+        gap: 20px;
+      }
+      .links ul li {
+        list-style-type: none;
+      }
+      .links ul li a {
+        text-decoration: none;
+        color: white;
+        display: inline-block;
+        font-size: 20px;
+      }
+      .logo1 {
+        font-size: 25px;
+        color: white;
+        font-weight: 700;
+      }
+      .logo2 {
+        font-size: 25px;
+        color: rgb(50, 237, 234);
+        font-weight: 700;
+      }
+      main {
+        background-color: rgb(8, 28, 41);
+        height: auto;
+      }
+      #Home {
+        display: flex;
+      }
+      .photo img {
+        height: 300px;
+        margin-top: 100px;
+        margin-left: 120px;
+        border-radius: 150px;
+        box-shadow: 0px 0px 91px rgb(50, 237, 234);
+        outline: 2px solid white;
+        outline-offset: 8px;
+      }
+
+      .text {
+        color: white;
+        font-weight: 600;
+      }
+      .typedtxt {
+        color: rgb(50, 237, 234);
+      }
+      .name {
+        font-size: 2.5rem;
+      }
+      .social {
+        margin-top: 20px;
+      }
+      .logos {
+        height: 50px;
+      }
+      .git {
+        background-color: white;
+      }
+      .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 25vw;
+      }
+      #About {
+        margin-top: 130px;
+        display: flex;
+      }
+      .photo2 img {
+        height: 250px;
+        margin-top: 40px;
+        margin-left: 120px;
+        margin-right: 150px;
+        border-radius: 150px;
+        box-shadow: 0px 0px 91px rgb(50, 237, 234);
+        outline: 2px solid white;
+        outline-offset: 8px;
+      }
+      .abtxt1 {
+        font-size: 30px;
+        color: white;
+        font-weight: 700;
+        margin-left: 50px;
+      }
+      .abtxt2 {
+        font-size: 25px;
+        color: rgb(50, 237, 234);
+        font-weight: 700;
+      }
+      .aboutpara {
+        color: white;
+        margin-left: 15px;
+        margin-top: 10px;
+      }
+      .skill {
+        color: white;
+      }
+      .skiltxt {
+        color: white;
+      }
+      .skillogo {
+        height: 40px;
+      }
+      .status {
+        color: white;
+      }
+      #Skills {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 100px;
+      }
+      table {
+        border: 2px solid white;
+        border-radius: 10px;
+        padding: 15px;
+        margin-top: 20px;
+        border-collapse: separate;
+      }
+
+      th,
+      td {
+        border: none;
+        padding: 10px 20px;
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <div class="logo">
+          <span class="logo1">Port</span><span class="logo2">Folio</span>
+        </div>
+        <div class="links">
+          <ul>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Skills">Skills</a></li>
+            <li><a href="#Projects">Projects</a></li>
+            <li><a href="#Contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <main>
+        <section id="Home">
+          <div class="photo">
+            <img src="./assests/photo1.png" alt="" />
+          </div>
+          <div class="content">
+            <h2 class="text">Hello, It's me</h2>
+            <h1 class="text name">Tanish Yadav</h1>
+            <h2 class="text">and I'm a<span class="typedtxt"></span></h2>
+            <div class="social">
+              <a href="https://github.com/tanishyadavrao" target="_blank"
+                ><img class="logos git" src="./assests/github.png" alt=""
+              /></a>
+              <a
+                href="https://www.linkedin.com/in/tanish-yadav-90b424279/"
+                target="_blank"
+                ><img class="logos" src="./assests/linkedin.png" alt=""
+              /></a>
+              <a
+                href="https://www.instagram.com/tanish.yadav_88/"
+                target="_blank"
+                ><img class="logos" src="./assests/insta.png" alt=""
+              /></a>
+            </div>
+          </div>
+        </section>
+        <section id="About">
+          <div class="text2">
+            <h2>
+              <span class="abtxt1">About</span><span class="abtxt2">Me</span>
+            </h2>
+            <p class="aboutpara">
+              Hi, I'm Tanish Yadav, a passionate developer who enjoys turning
+              ideas into real-world digital solutions. I have a strong interest
+              in web development, problem-solving, and building user-friendly
+              applications that create meaningful impact.<br />
+              I love exploring new technologies, working on innovative projects,
+              and continuously improving my skills in software development. From
+              designing responsive websites to developing full-stack
+              applications, I enjoy every step of the development process.<br />
+              Currently, I am focused on enhancing my expertise in modern web
+              technologies, data structures, algorithms, and startup-oriented
+              product development. My goal is to build technology that solves
+              real problems and delivers value to people. <br />
+            </p>
+          </div>
+          <div class="photo2">
+            <img src="./assests/photo1.png" alt="" />
+          </div>
+        </section>
+        <section id="Skills">
+          <h2 class="skiltxt">Technical Skills</h2>
+          <table>
+            <thead>
+              <tr>
+                <th class="status">Skill</th>
+                <th class="status">Level</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <span
+                    ><img
+                      src="./assests/letter-c.png"
+                      alt=""
+                      class="skillogo" /></span
+                  ><span class="status">c</span>
+                </td>
+                <td class="status">Beginner</td>
+              </tr>
+              <tr>
+                <td>
+                  <span
+                    ><img
+                      src="./assests/cpp.png"
+                      alt=""
+                      class="skillogo" /></span
+                  ><span class="status">C++</span>
+                </td>
+                <td class="status">Learning</td>
+              </tr>
+              <tr>
+                <td>
+                  <span
+                    ><img
+                      src="./assests/dsa.png"
+                      alt=""
+                      class="skillogo" /></span
+                  ><span class="status">DSA</span>
+                </td>
+                <td class="status">Learning</td>
+              </tr>
+              <tr>
+                <td>
+                  <span
+                    ><img
+                      src="./assests/html.png"
+                      alt=""
+                      class="skillogo" /></span
+                  ><span class="status">HTML</span>
+                </td>
+                <td class="status">Beginner</td>
+              </tr>
+              <tr>
+                <td>
+                  <span
+                    ><img
+                      src="./assests/css.png"
+                      alt=""
+                      class="skillogo" /></span
+                  ><span class="status">CSS</span>
+                </td>
+                <td class="status">Beginner</td>
+              </tr>
+              <tr>
+                <td>
+                  <span
+                    ><img
+                      src="./assests/java-script.png"
+                      alt=""
+                      class="skillogo" /></span
+                  ><span class="status">Java Script</span>
+                </td>
+                <td class="status">Learning</td>
+              </tr>
+              <tr>
+                <td>
+                  <span
+                    ><img
+                      src="./assests/react.png"
+                      alt=""
+                      class="skillogo" /></span
+                  ><span class="status">React</span>
+                </td>
+                <td class="status">Learning</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+      </main>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
