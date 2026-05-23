@@ -3,310 +3,370 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Tanish Yadav | Portfolio</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Typed.js -->
     <script src="https://unpkg.com/typed.js@3.0.0/dist/typed.umd.js"></script>
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        font-family: sans-serif;
-        scroll-behavior: smooth;
-      }
-      nav {
-        background-color: rgb(6, 16, 41);
-        display: flex;
-        height: 50px;
-        justify-content: space-around;
-        padding-top: 15px;
-        position: fixed;
-        width: 100vw;
-      }
-      .links ul {
-        display: flex;
-        gap: 20px;
-      }
-      .links ul li {
-        list-style-type: none;
-      }
-      .links ul li a {
-        text-decoration: none;
-        color: white;
-        display: inline-block;
-        font-size: 20px;
-      }
-      .logo1 {
-        font-size: 25px;
-        color: white;
-        font-weight: 700;
-      }
-      .logo2 {
-        font-size: 25px;
-        color: rgb(50, 237, 234);
-        font-weight: 700;
-      }
-      main {
-        background-color: rgb(8, 28, 41);
-        height: auto;
-      }
-      #Home {
-        display: flex;
-      }
-      .photo img {
-        height: 300px;
-        margin-top: 100px;
-        margin-left: 120px;
-        border-radius: 150px;
-        box-shadow: 0px 0px 91px rgb(50, 237, 234);
-        outline: 2px solid white;
-        outline-offset: 8px;
-      }
-
-      .text {
-        color: white;
-        font-weight: 600;
-      }
-      .typedtxt {
-        color: rgb(50, 237, 234);
-      }
-      .name {
-        font-size: 2.5rem;
-      }
-      .social {
-        margin-top: 20px;
-      }
-      .logos {
-        height: 50px;
-      }
-      .git {
-        background-color: white;
-      }
-      .content {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin-left: 25vw;
-      }
-      #About {
-        margin-top: 130px;
-        display: flex;
-      }
-      .photo2 img {
-        height: 250px;
-        margin-top: 40px;
-        margin-left: 120px;
-        margin-right: 150px;
-        border-radius: 150px;
-        box-shadow: 0px 0px 91px rgb(50, 237, 234);
-        outline: 2px solid white;
-        outline-offset: 8px;
-      }
-      .abtxt1 {
-        font-size: 30px;
-        color: white;
-        font-weight: 700;
-        margin-left: 50px;
-      }
-      .abtxt2 {
-        font-size: 25px;
-        color: rgb(50, 237, 234);
-        font-weight: 700;
-      }
-      .aboutpara {
-        color: white;
-        margin-left: 15px;
-        margin-top: 10px;
-      }
-      .skill {
-        color: white;
-      }
-      .skiltxt {
-        color: white;
-      }
-      .skillogo {
-        height: 40px;
-      }
-      .status {
-        color: white;
-      }
-      #Skills {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-top: 100px;
-      }
-      table {
-        border: 2px solid white;
-        border-radius: 10px;
-        padding: 15px;
-        margin-top: 20px;
-        border-collapse: separate;
-      }
-
-      th,
-      td {
-        border: none;
-        padding: 10px 20px;
-        text-align: left;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <div class="container">
-      <nav>
-        <div class="logo">
-          <span class="logo1">Port</span><span class="logo2">Folio</span>
-        </div>
-        <div class="links">
-          <ul>
-            <li><a href="#Home">Home</a></li>
-            <li><a href="#About">About</a></li>
-            <li><a href="#Skills">Skills</a></li>
-            <li><a href="#Projects">Projects</a></li>
-            <li><a href="#Contact">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-      <main>
-        <section id="Home">
-          <div class="photo">
-            <img src="./assests/photo1.png" alt="" />
+      <header>
+        <nav>
+          <div class="logo">
+            <span class="logo1">Port</span><span class="logo2">Folio</span>
           </div>
-          <div class="content">
-            <h2 class="text">Hello, It's me</h2>
-            <h1 class="text name">Tanish Yadav</h1>
-            <h2 class="text">and I'm a<span class="typedtxt"></span></h2>
+          <div class="menu-btn" id="menu-btn">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <div class="links" id="nav-links">
+            <ul>
+              <li><a style="--i:1" href="#Home" class="active">Home</a></li>
+              <li><a style="--i:2" href="#About">About</a></li>
+              <li><a style="--i:3" href="#Skills">Skills</a></li>
+              <li><a style="--i:4" href="#Projects">Projects</a></li>
+              <li><a style="--i:5" href="#Contact">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+      <main>
+        <!-- Hero Section -->
+        <section id="Home" class="hero-section">
+          <div class="hero-content">
+            <h2 class="text-subtitle">Hello, It's me</h2>
+            <h1 class="text-name">Tanish Yadav</h1>
+            <h2 class="text-typed">and I'm a <span class="typedtxt"></span></h2>
+            <p class="hero-description">
+              Passionate developer building modern, interactive, and responsive web applications. Focused on UI/UX design, clean code, and solving real-world challenges.
+            </p>
+            <div class="hero-buttons">
+              <a href="#Contact" class="btn btn-primary">Hire Me</a>
+              <a href="#Projects" class="btn btn-secondary">View Work</a>
+            </div>
             <div class="social">
-              <a href="https://github.com/tanishyadavrao" target="_blank"
-                ><img class="logos git" src="./assests/github.png" alt=""
-              /></a>
-              <a
-                href="https://www.linkedin.com/in/tanish-yadav-90b424279/"
-                target="_blank"
-                ><img class="logos" src="./assests/linkedin.png" alt=""
-              /></a>
-              <a
-                href="https://www.instagram.com/tanish.yadav_88/"
-                target="_blank"
-                ><img class="logos" src="./assests/insta.png" alt=""
-              /></a>
+              <a href="https://github.com/tanishyadavrao" target="_blank" aria-label="GitHub" class="social-icon">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/tanish-yadav-90b424279/" target="_blank" aria-label="LinkedIn" class="social-icon">
+                <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+              <a href="https://www.instagram.com/tanish.yadav_88/" target="_blank" aria-label="Instagram" class="social-icon">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+          <div class="hero-photo">
+            <div class="avatar-wrapper">
+              <div class="avatar-glow"></div>
+              <img src="./assests/photo1.png" alt="Tanish Yadav" />
             </div>
           </div>
         </section>
-        <section id="About">
-          <div class="text2">
-            <h2>
-              <span class="abtxt1">About</span><span class="abtxt2">Me</span>
-            </h2>
-            <p class="aboutpara">
-              Hi, I'm Tanish Yadav, a passionate developer who enjoys turning
-              ideas into real-world digital solutions. I have a strong interest
-              in web development, problem-solving, and building user-friendly
-              applications that create meaningful impact.<br />
-              I love exploring new technologies, working on innovative projects,
-              and continuously improving my skills in software development. From
-              designing responsive websites to developing full-stack
-              applications, I enjoy every step of the development process.<br />
-              Currently, I am focused on enhancing my expertise in modern web
-              technologies, data structures, algorithms, and startup-oriented
-              product development. My goal is to build technology that solves
-              real problems and delivers value to people. <br />
-            </p>
-          </div>
-          <div class="photo2">
-            <img src="./assests/photo1.png" alt="" />
+
+        <!-- About Section -->
+        <section id="About" class="about-section">
+          <div class="about-container">
+            <div class="about-photo">
+              <div class="about-avatar-wrapper">
+                <div class="about-avatar-glow"></div>
+                <img src="./assests/photo1.png" alt="About Tanish Yadav" />
+              </div>
+            </div>
+            <div class="about-content">
+              <h2 class="section-title">
+                <span class="abtxt1">About</span><span class="abtxt2">Me</span>
+              </h2>
+              <p class="aboutpara">
+                Hi, I'm Tanish Yadav, a passionate developer who enjoys turning ideas into real-world digital solutions. I have a strong interest in web development, problem-solving, and building user-friendly applications that create meaningful impact.
+              </p>
+              <p class="aboutpara">
+                I love exploring new technologies, working on innovative projects, and continuously improving my skills in software development. From designing responsive websites to developing full-stack applications, I enjoy every step of the development process.
+              </p>
+              <p class="aboutpara">
+                Currently, I am focused on enhancing my expertise in modern web technologies, data structures, algorithms, and startup-oriented product development. My goal is to build technology that solves real problems and delivers value.
+              </p>
+              <div class="about-stats">
+                <div class="stat-card">
+                  <i class="fa-solid fa-code stat-icon"></i>
+                  <h3>Developer</h3>
+                  <p>Frontend & Logic</p>
+                </div>
+                <div class="stat-card">
+                  <i class="fa-solid fa-graduation-cap stat-icon"></i>
+                  <h3>Learner</h3>
+                  <p>DSA & Algorithms</p>
+                </div>
+                <div class="stat-card">
+                  <i class="fa-solid fa-rocket stat-icon"></i>
+                  <h3>Goal</h3>
+                  <p>Impactful Products</p>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
-        <section id="Skills">
-          <h2 class="skiltxt">Technical Skills</h2>
-          <table>
-            <thead>
-              <tr>
-                <th class="status">Skill</th>
-                <th class="status">Level</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>
-                  <span
-                    ><img
-                      src="./assests/letter-c.png"
-                      alt=""
-                      class="skillogo" /></span
-                  ><span class="status">c</span>
-                </td>
-                <td class="status">Beginner</td>
-              </tr>
-              <tr>
-                <td>
-                  <span
-                    ><img
-                      src="./assests/cpp.png"
-                      alt=""
-                      class="skillogo" /></span
-                  ><span class="status">C++</span>
-                </td>
-                <td class="status">Learning</td>
-              </tr>
-              <tr>
-                <td>
-                  <span
-                    ><img
-                      src="./assests/dsa.png"
-                      alt=""
-                      class="skillogo" /></span
-                  ><span class="status">DSA</span>
-                </td>
-                <td class="status">Learning</td>
-              </tr>
-              <tr>
-                <td>
-                  <span
-                    ><img
-                      src="./assests/html.png"
-                      alt=""
-                      class="skillogo" /></span
-                  ><span class="status">HTML</span>
-                </td>
-                <td class="status">Beginner</td>
-              </tr>
-              <tr>
-                <td>
-                  <span
-                    ><img
-                      src="./assests/css.png"
-                      alt=""
-                      class="skillogo" /></span
-                  ><span class="status">CSS</span>
-                </td>
-                <td class="status">Beginner</td>
-              </tr>
-              <tr>
-                <td>
-                  <span
-                    ><img
-                      src="./assests/java-script.png"
-                      alt=""
-                      class="skillogo" /></span
-                  ><span class="status">Java Script</span>
-                </td>
-                <td class="status">Learning</td>
-              </tr>
-              <tr>
-                <td>
-                  <span
-                    ><img
-                      src="./assests/react.png"
-                      alt=""
-                      class="skillogo" /></span
-                  ><span class="status">React</span>
-                </td>
-                <td class="status">Learning</td>
-              </tr>
-            </tbody>
-          </table>
+
+        <!-- Skills Section -->
+        <section id="Skills" class="skills-section">
+          <h2 class="section-title text-center">Technical <span class="highlight">Skills</span></h2>
+          <p class="section-subtitle">The tools, languages, and frameworks I use to bring ideas to life.</p>
+          <div class="skills-grid">
+            <!-- Skill: C -->
+            <div class="skill-card">
+              <div class="skill-info">
+                <div class="skill-header">
+                  <img src="./assests/letter-c.png" alt="C" class="skill-icon-img" />
+                  <h3>C</h3>
+                </div>
+                <span class="skill-level beginner">Beginner</span>
+              </div>
+              <div class="progress-bar-container">
+                <div class="progress-bar" style="width: 45%;"></div>
+              </div>
+            </div>
+            <!-- Skill: C++ -->
+            <div class="skill-card">
+              <div class="skill-info">
+                <div class="skill-header">
+                  <img src="./assests/cpp.png" alt="C++" class="skill-icon-img" />
+                  <h3>C++</h3>
+                </div>
+                <span class="skill-level learning">Learning</span>
+              </div>
+              <div class="progress-bar-container">
+                <div class="progress-bar" style="width: 55%;"></div>
+              </div>
+            </div>
+            <!-- Skill: DSA -->
+            <div class="skill-card">
+              <div class="skill-info">
+                <div class="skill-header">
+                  <img src="./assests/dsa.png" alt="DSA" class="skill-icon-img" />
+                  <h3>DSA</h3>
+                </div>
+                <span class="skill-level learning">Learning</span>
+              </div>
+              <div class="progress-bar-container">
+                <div class="progress-bar" style="width: 50%;"></div>
+              </div>
+            </div>
+            <!-- Skill: HTML -->
+            <div class="skill-card">
+              <div class="skill-info">
+                <div class="skill-header">
+                  <img src="./assests/html.png" alt="HTML" class="skill-icon-img" />
+                  <h3>HTML5</h3>
+                </div>
+                <span class="skill-level beginner">Beginner</span>
+              </div>
+              <div class="progress-bar-container">
+                <div class="progress-bar" style="width: 75%;"></div>
+              </div>
+            </div>
+            <!-- Skill: CSS -->
+            <div class="skill-card">
+              <div class="skill-info">
+                <div class="skill-header">
+                  <img src="./assests/css.png" alt="CSS" class="skill-icon-img" />
+                  <h3>CSS3</h3>
+                </div>
+                <span class="skill-level beginner">Beginner</span>
+              </div>
+              <div class="progress-bar-container">
+                <div class="progress-bar" style="width: 70%;"></div>
+              </div>
+            </div>
+            <!-- Skill: JavaScript -->
+            <div class="skill-card">
+              <div class="skill-info">
+                <div class="skill-header">
+                  <img src="./assests/java-script.png" alt="JavaScript" class="skill-icon-img" />
+                  <h3>JavaScript</h3>
+                </div>
+                <span class="skill-level learning">Learning</span>
+              </div>
+              <div class="progress-bar-container">
+                <div class="progress-bar" style="width: 60%;"></div>
+              </div>
+            </div>
+            <!-- Skill: React -->
+            <div class="skill-card">
+              <div class="skill-info">
+                <div class="skill-header">
+                  <img src="./assests/react.png" alt="React" class="skill-icon-img" />
+                  <h3>React</h3>
+                </div>
+                <span class="skill-level learning">Learning</span>
+              </div>
+              <div class="progress-bar-container">
+                <div class="progress-bar" style="width: 40%;"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="Projects" class="projects-section">
+          <h2 class="section-title text-center">My <span class="highlight">Projects</span></h2>
+          <p class="section-subtitle">Here are some of the web development and programming projects I've built.</p>
+          <div class="projects-grid">
+            <!-- Project 1 -->
+            <div class="project-card">
+              <div class="project-img-wrapper">
+                <div class="project-glow"></div>
+                <i class="fa-solid fa-laptop-code project-placeholder-icon"></i>
+              </div>
+              <div class="project-info">
+                <h3>Personal Portfolio</h3>
+                <p>A responsive, modern personal website with interactive animations, built to showcase development projects and skills.</p>
+                <div class="project-tags">
+                  <span>HTML5</span>
+                  <span>CSS3</span>
+                  <span>JavaScript</span>
+                </div>
+                <div class="project-links">
+                  <a href="https://github.com/tanishyadavrao/portfolio" target="_blank" class="project-link-btn">
+                    <i class="fa-brands fa-github"></i> Code
+                  </a>
+                  <a href="#" class="project-link-btn">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- Project 2 -->
+            <div class="project-card">
+              <div class="project-img-wrapper">
+                <div class="project-glow"></div>
+                <i class="fa-solid fa-list-check project-placeholder-icon"></i>
+              </div>
+              <div class="project-info">
+                <h3>Interactive Task Board</h3>
+                <p>A frontend web application for organizing daily tasks, featuring category filters, task priorities, and local storage state persistence.</p>
+                <div class="project-tags">
+                  <span>React</span>
+                  <span>CSS Modules</span>
+                  <span>Local Storage</span>
+                </div>
+                <div class="project-links">
+                  <a href="https://github.com/tanishyadavrao" target="_blank" class="project-link-btn">
+                    <i class="fa-brands fa-github"></i> Code
+                  </a>
+                  <a href="#" class="project-link-btn">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- Project 3 -->
+            <div class="project-card">
+              <div class="project-img-wrapper">
+                <div class="project-glow"></div>
+                <i class="fa-solid fa-calculator project-placeholder-icon"></i>
+              </div>
+              <div class="project-info">
+                <h3>Algorithms Visualizer</h3>
+                <p>A visual simulator showing how classic data structures and sorting/searching algorithms execute step-by-step in real-time.</p>
+                <div class="project-tags">
+                  <span>JavaScript</span>
+                  <span>HTML5 Canvas</span>
+                  <span>Algorithms</span>
+                </div>
+                <div class="project-links">
+                  <a href="https://github.com/tanishyadavrao" target="_blank" class="project-link-btn">
+                    <i class="fa-brands fa-github"></i> Code
+                  </a>
+                  <a href="#" class="project-link-btn">
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="Contact" class="contact-section">
+          <h2 class="section-title text-center">Get In <span class="highlight">Touch</span></h2>
+          <p class="section-subtitle">Have a question or want to work together? Drop me a message below!</p>
+          <div class="contact-container">
+            <div class="contact-info">
+              <div class="contact-info-card">
+                <div class="info-icon-wrapper">
+                  <i class="fa-solid fa-envelope"></i>
+                </div>
+                <div>
+                  <h3>Email Me</h3>
+                  <p><a href="mailto:tanishyadavrao@gmail.com">tanishyadavrao@gmail.com</a></p>
+                </div>
+              </div>
+              <div class="contact-info-card">
+                <div class="info-icon-wrapper">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <div>
+                  <h3>Location</h3>
+                  <p>India</p>
+                </div>
+              </div>
+              <div class="contact-info-card">
+                <div class="info-icon-wrapper">
+                  <i class="fa-solid fa-user-plus"></i>
+                </div>
+                <div>
+                  <h3>Social Connect</h3>
+                  <p>Available on LinkedIn & GitHub</p>
+                </div>
+              </div>
+            </div>
+            <div class="contact-form-wrapper">
+              <form class="contact-form" id="contact-form" onsubmit="event.preventDefault(); alert('Message sent! Thank you.');">
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" required placeholder="John Doe">
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" required placeholder="john@example.com">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="subject">Subject</label>
+                  <input type="text" id="subject" required placeholder="Project Proposal">
+                </div>
+                <div class="form-group">
+                  <label for="message">Message</label>
+                  <textarea id="message" rows="5" required placeholder="Describe your project, ideas, or questions..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary submit-btn">
+                  Send Message <i class="fa-solid fa-paper-plane"></i>
+                </button>
+              </form>
+            </div>
+          </div>
         </section>
       </main>
+
+      <footer>
+        <div class="footer-content">
+          <p>&copy; 2026 Tanish Yadav. All rights reserved.</p>
+          <div class="footer-links">
+            <a href="#Home">Home</a>
+            <a href="#About">About</a>
+            <a href="#Skills">Skills</a>
+            <a href="#Projects">Projects</a>
+            <a href="#Contact">Contact</a>
+          </div>
+        </div>
+      </footer>
     </div>
     <script src="script.js"></script>
   </body>
